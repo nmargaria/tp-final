@@ -1,0 +1,331 @@
+/* CSS Document  */
+/* Project name: TP Final */
+/* File name: styles.css */
+/* Description: Hoja de estilos global */
+/* Creation date: Mayo de 2016 */
+/* Author: Name Lastname */
+/* Author's eMail: username@server.com */
+/********** FONTS (Google-fonts) ********* */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+@import url(https://fonts.googleapis.com/css?family=Monda:400,700);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+body {
+  font-family: "Open Sans";
+  margin: 0; }
+
+figure {
+  margin: 0;
+  line-height: 0; }
+
+a {
+  outline: none !important; }
+
+/********************************* */
+/*=========     GLOBAL   ========= */
+/********************************* */
+#banner, #MyCarousel, .section-title, #trending-titles, #categorias, #how-to, #newsletter, #about-us, #footer {
+  padding: 40px 0; }
+
+.section-title {
+  font-weight: 100;
+  font-size: 38px;
+  font-family: "Open Sans"; }
+
+p {
+  font-size: 22px;
+  font-family: "Source Sans Pro";
+  line-height: 25px;
+  margin-bottom: 50px; }
+
+/********************************* */
+/*=========     HEADER   ========= */
+/********************************* */
+.navbar-default {
+  background-color: #dee7ea;
+  border: none; }
+  .navbar-default .navbar-collapse {
+    background-color: #dee7ea; }
+  .navbar-default .navbar-toggle {
+    border: none;
+    background-color: #dee7ea;
+    color: #7d4741; }
+    .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:active, .navbar-default .navbar-toggle:focus {
+      background-color: #dee7ea !important; }
+  .navbar-default .navbar-nav > li > a {
+    font-family: "Source Sans Pro";
+    color: #7d4741;
+    text-transform: uppercase; }
+    .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:active, .navbar-default .navbar-nav > li > a:focus {
+      color: #fff !important;
+      background-color: #7d4741 !important; }
+  .navbar-default .navbar-nav > .active > a {
+    color: #fff;
+    background-color: #7d4741 !important; }
+
+/********************************* */
+/*=========     BANNER   ========= */
+/********************************* */
+#banner {
+  background: url(../images/bg_header.jpg) center center/cover; }
+  #banner .container {
+    padding: 20px; }
+
+header {
+  margin: 80px auto; }
+
+.buscador {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 500px; }
+  .buscador .form-group {
+    width: 100%; }
+  .buscador input[type=text] {
+    display: inline-block;
+    padding-left: 15px;
+    height: 50px;
+    width: 80%;
+    border: none;
+    margin-left: 20%;
+    margin: 0;
+    border-radius: 0px;
+    -webkit-border-radius: 0px; }
+  .buscador .btn-default {
+    margin: 0;
+    padding: 5px 0 5px;
+    width: 18%;
+    background-color: #7d4741;
+    color: #fff;
+    border: none;
+    height: 50px;
+    border-radius: 0px;
+    -webkit-border-radius: 0px; }
+
+/************************************** */
+/*=========     BEST-SELLERS    ========= */
+/************************************** */
+.super-probando {
+  max-width: 1200px;
+  width: 95%;
+  margin: 0 auto;
+  overflow: hidden; }
+
+.probando {
+  width: 100%; }
+
+.section-title {
+  margin-bottom: 60px;
+  color: #7d4741; }
+
+.carousel-inner {
+  max-width: 250px;
+  margin: 0 auto;
+  margin-top: 20px; }
+
+.carousel-control.right {
+  margin-right: 13.5%; }
+
+.carousel-control.left {
+  margin-left: 13.5%; }
+
+/**************************************** */
+/*=========     TRENDING-TITLES    ========= */
+/**************************************** */
+#trending-titles .section-title {
+  margin-bottom: 60px;
+  color: #13545f; }
+
+.book {
+  margin: 0 auto 40px;
+  max-width: 300px; }
+  .book figure {
+    position: relative; }
+    .book figure div {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(19, 84, 95, 0.5);
+      opacity: 0;
+      transition: 500ms;
+      -ms-transition: 500ms;
+      -webkit-transition: 500ms; }
+      .book figure div span {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        color: #fff;
+        font-size: 50px;
+        transform: translate(-50%, -50%) scale(0);
+        transition: 300ms;
+        -ms-transition: 300ms;
+        -webkit-transition: 300ms; }
+    .book figure:hover div {
+      opacity: 1; }
+      .book figure:hover div span {
+        transform: translate(-50%, -50%) scale(1); }
+
+.booktitle-caption {
+  margin-top: 15px; }
+  .booktitle-caption h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #13545f;
+    font-family: "Source Sans Pro";
+    margin-bottom: 0; }
+  .booktitle-caption p {
+    font-family: "Open Sans";
+    font-size: 15px; }
+
+/****************************************** */
+/*=========     CATEGORIES    ========= */
+/****************************************** */
+#categorias {
+  background: url(../images/bg_categorias.jpg) center center/cover; }
+  #categorias .section-title {
+    color: #302c2b;
+    margin-bottom: 30px; }
+
+.categoria-item {
+  margin: 0 auto 20px;
+  padding-top: 10px;
+  color: #fff;
+  background-color: #7d4741;
+  width: 150px;
+  height: 40px;
+  border-radius: 2px;
+  -webkit-border-radius: 2px; }
+  .categoria-item:hover {
+    background-color: #302c2b; }
+
+/*********************************** */
+/*=========     HOW-TO    ========= */
+/*********************************** */
+#how-to .section-title {
+  font-weight: 600; }
+#how-to .item-subtitle {
+  margin-bottom: 30px; }
+
+/**************************************** */
+/*=========     NEWSLETTER    ========= */
+/**************************************** */
+#newsletter {
+  background-color: #ccc;
+  margin: auto; }
+  #newsletter .section-title {
+    color: #7d4741;
+    font-weight: 600; }
+
+.form-control {
+  height: 50px;
+  font-family: "Source Sans Pro";
+  font-size: 18px;
+  margin-bottom: 20px; }
+
+.btn {
+  margin: 10px auto;
+  background-color: #7d4741;
+  color: #fff;
+  font: 400 18px "Source Sans Pro";
+  padding: 20px 40px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border: none; }
+  .btn:hover, .btn:focus, .btn:active {
+    background-color: #7d4741;
+    color: #fff; }
+
+/*********************************** */
+/*=========     ABOUT-US    ========= */
+/*********************************** */
+#about-us .section-title {
+  margin-bottom: 30px;
+  font-weight: 600; }
+
+.about-1 img {
+  position: absolute;
+  margin: 5px;
+  right: 0;
+  top: 0;
+  width: 150px;
+  height: 150px;
+  border: solid 8px #f1f1f1;
+  background-color: #7d4741;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  overflow: hidden; }
+.about-1 p {
+  font-size: 16px;
+  text-align: right;
+  margin-right: 150px;
+  margin-top: 30px; }
+
+.about-2 img {
+  position: absolute;
+  margin: 5px;
+  left: 0;
+  top: 0;
+  width: 150px;
+  height: 150px;
+  border: solid 8px #f1f1f1;
+  background-color: #7d4741;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  overflow: hidden; }
+.about-2 p {
+  font-size: 16px;
+  text-align: left;
+  margin-left: 150px;
+  margin-top: 30px; }
+
+/********************************** */
+/*=========     FOOTER    ========= */
+/********************************** */
+#footer {
+  background-color: #dee7ea;
+  margin: auto; }
+  #footer img {
+    max-width: 30%;
+    max-height: 30%; }
+
+.fa {
+  color: #fff;
+  background-color: #7d4741;
+  width: 40px;
+  height: 40px;
+  padding: 12px 12px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%; }
+
+.footer-copyright {
+  font-size: 16px;
+  font-family: "Source Sans Pro";
+  color: #7d4741; }
+
+/********************************** */
+/*========= MEDIA-QUERIES ========= */
+/********************************** */
+/***************************************** */
+/*=========     MEDIA-QUERIES    ========= */
+/***************************************** */
+@media (min-width: 560px) {
+  .probando {
+    float: left;
+    width: 47%;
+    margin-right: 6%; }
+    .probando:nth-child(2n) {
+      margin-right: 0; }
+
+  .carousel-control.right {
+    margin-right: 0; }
+
+  .carousel-control.left {
+    margin-left: 0; } }
+@media (min-width: 1000px) {
+  .probando {
+    width: 20%;
+    margin-right: 6.6666%; }
+    .probando:nth-child(2) {
+      margin-right: 6.666%; } }
+
+/*# sourceMappingURL=styles.css.map */
